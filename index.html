@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/styles.css" />
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chicle&family=Oi&display=swap" rel="stylesheet">    
 </head>
-<h1>
+<header>
     <div class = "weather-app">
       <form action="submit">
         <input
@@ -15,26 +15,29 @@
           placeholder="Enter your city..."
           city="city"
           id="citySearch"
+          required
+          minlength="2"
         />
         <input type="submit" value="Search" />
       </form>
-    </h1>
-    <h2>
+    </header>
+    <p>
         <span class="city-displayed">Hamilton</span>
         </br>
     Monday 16:47, moderate rain </br>
 Humidity: <span class="weather-specs">87%</span>, Wind: <span class="weather-specs">7.2km/h</span>
-</h2>
+      </p>
 <div class="current-temperature">
             <span class="current-temperature-icon">☔️</span
             ><span class="current-temperature-value" id="current-temperature"
               >3</span
             ><span class="current-temperature-unit">°C</span>
+            </div>
     <footer>
       This project was coded by
       <a href="https://github.com/heschofield" target="_blank"
         >Hayley Schofield</a
-      >, is on
+      >, is open-sourced on
       <a href="https://github.com/heschofield/Project" target="_blank">GitHub</a
       >, and is hosted on
       <a href="https://para-pluie-app.netlify.app/" target="_blank">Netlify</a>.
