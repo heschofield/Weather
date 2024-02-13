@@ -1,0 +1,23 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+}
+
+.weather-app {
+  display: flex;
+  text-align: center;
+  position: static;
+}
+.city-displayed {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: rgb(1, 1, 178);
+}
+
+.weather-specs {
+  color: hotpink;
+}
