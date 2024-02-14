@@ -1,8 +1,8 @@
 body {
-  background-color: rgb(118, 168, 221);
+  background-color: rgb(97, 48, 75);
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: 50;
+  font-weight: 100;
   font-style: normal;
   color: rgb(71, 71, 71);
 }
@@ -14,24 +14,29 @@ form {
 
 p {
   font-size: 16px;
+  border-style: dashed;
+  border-color: rgb(133, 124, 141);
+  max-width: fit-content;
+  padding: 15px;
+  justify-content: left;
 }
 
 footer {
   font-size: 12px;
   align-content: center;
   border-style: dashed;
-  border-color: grey;
+  border-color: rgb(133, 124, 141);
   display: block;
   padding: 5px 5px;
   margin: 10px;
 }
 .weather-app {
-  background-color: rgb(242, 238, 238);
+  background-color: rgb(148, 191, 190);
   margin: 45px auto;
   padding: 30px;
-  box-shadow: grey 7px 7px;
+  box-shadow: rgb(92, 0, 41) 7px 7px;
   border-style: solid;
-  border-color: grey;
+  border-color: rgb(92, 0, 41);
   border-width: 2px;
   max-width: 600px;
 }
@@ -40,8 +45,12 @@ footer {
   margin: 20px;
   width: 80%;
   font-size: 16px;
-  background-color: rgb(167, 201, 238);
+  background-color: rgb(133, 124, 141);
   font-family: Arial, Helvetica, sans-serif;
+}
+::placeholder {
+  color: rgb(172, 247, 193);
+  opacity: 1;
 }
 
 .search-button {
@@ -49,7 +58,8 @@ footer {
   margin: 20px;
   width: 20%;
   font-size: 16px;
-  background-color: rgb(130, 156, 185);
+  background-color: rgb(172, 247, 193);
+  color: rgb(92, 0, 41);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -58,8 +68,8 @@ footer {
   font-weight: 400;
   font-size: 50px;
   letter-spacing: 3px;
-  color: rgb(1, 1, 178);
-  text-shadow: 2px 2px rgb(130, 156, 185);
+  color: rgb(172, 247, 193);
+  text-shadow: 2px 2px rgb(92, 0, 41);
 }
 
 .weather-specs {
@@ -70,15 +80,20 @@ footer {
   font-weight: 400;
   font-size: 50px;
   letter-spacing: 3px;
-  color: rgb(1, 1, 178);
-  text-shadow: 2px 2px rgb(130, 156, 185);
+  color: rgb(172, 247, 193);
+  text-shadow: 2px 2px rgb(92, 0, 41);
   display: flex;
   justify-content: right;
+  border-style: dashed;
+  border-color: rgb(133, 124, 141);
+  max-width: fit-content;
+  padding: 15px;
 }
-
+/*
 .current-temperature-icon {
 }
 .current-temperature-value {
 }
 .current-temperature-unit {
 }
+*/
