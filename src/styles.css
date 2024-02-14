@@ -6,12 +6,10 @@ body {
   font-style: normal;
   color: rgb(71, 71, 71);
 }
-
 form {
   display: flex;
   justify-content: center;
 }
-
 p {
   font-size: 16px;
   border-style: dashed;
@@ -19,16 +17,16 @@ p {
   max-width: fit-content;
   padding: 15px;
   justify-content: left;
+  border-radius: 5px;
 }
-
 footer {
   font-size: 12px;
   text-align: center;
   border-style: dashed;
   border-color: rgb(133, 124, 141);
-  display: block;
-  padding: 5px 5px;
-  margin: 10px;
+  padding: 30 0 0 30;
+  margin: 20px;
+  border-radius: 5px;
 }
 .weather-app {
   background-color: rgb(148, 191, 190);
@@ -41,21 +39,26 @@ footer {
   max-width: 600px;
 }
 .search-input {
-  padding: 15px 20px;
+  padding: 15px 30px;
   margin: 20px;
   width: 80%;
   font-size: 16px;
   background-color: rgb(133, 124, 141);
   font-family: "Roboto Mono", monospace;
+  border-radius: 5px;
+}
+.search-input:focus {
+  outline: none;
+  font-size: 16px;
+  color: rgb(172, 247, 193);
 }
 ::placeholder {
   color: rgb(172, 247, 193);
   font-family: "Roboto Mono", monospace;
   opacity: 1;
 }
-
 .search-button {
-  padding: 15px 20px;
+  padding: 15px 30px;
   margin: 20px;
   width: 20%;
   font-size: 16px;
@@ -64,8 +67,12 @@ footer {
   border-style: dashed;
   border-color: rgb(92, 0, 41);
   font-family: "Roboto Mono", monospace;
+  text-shadow: 1px 1px rgb(133, 124, 141);
+  border-radius: 5px;
 }
-
+::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
 .city-displayed {
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
@@ -91,6 +98,7 @@ footer {
   border-color: rgb(133, 124, 141);
   max-width: fit-content;
   padding: 15px;
+  border-radius: 5px;
 }
 /*
 .current-temperature-icon {
