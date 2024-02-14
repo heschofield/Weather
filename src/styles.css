@@ -2,7 +2,7 @@ body {
   background-color: rgb(97, 48, 75);
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: auto;
   font-style: normal;
   color: rgb(71, 71, 71);
 }
@@ -23,7 +23,7 @@ p {
 
 footer {
   font-size: 12px;
-  align-content: center;
+  text-align: center;
   border-style: dashed;
   border-color: rgb(133, 124, 141);
   display: block;
@@ -46,10 +46,11 @@ footer {
   width: 80%;
   font-size: 16px;
   background-color: rgb(133, 124, 141);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 ::placeholder {
   color: rgb(172, 247, 193);
+  font-family: "Roboto Mono", monospace;
   opacity: 1;
 }
 
@@ -60,7 +61,9 @@ footer {
   font-size: 16px;
   background-color: rgb(172, 247, 193);
   color: rgb(92, 0, 41);
-  font-family: Arial, Helvetica, sans-serif;
+  border-style: dashed;
+  border-color: rgb(92, 0, 41);
+  font-family: "Roboto Mono", monospace;
 }
 
 .city-displayed {
