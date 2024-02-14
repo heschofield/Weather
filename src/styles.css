@@ -1,11 +1,14 @@
+.weather-app {
+  background-color: rgb(242, 238, 238);
+  padding: 25px;
+}
+
 body {
+  background-color: rgb(118, 168, 221);
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 50;
   font-style: normal;
-}
-
-.weather-app {
 }
 .city-displayed {
   font-family: "Audiowide", sans-serif;

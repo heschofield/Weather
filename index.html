@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="src/styles.css" />
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chicle&family=Oi&display=swap" rel="stylesheet">    
 </head>
-<header>
-    <div class = "weather-app">
-      <form action="submit">
+<body>
+    <div class ="weather-app">
+      <header></header>
+      <form id="search-form">
         <input
-          type="text"
+          type="search"
           placeholder="Enter your city..."
-          city="city"
-          id="citySearch"
+          id="search-input"
+          class="search-input"
           required
           minlength="2"
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" class="search-button"/>
       </form>
     </header>
-    <p>
+    <main>
+      <p>
         <span class="city-displayed">Hamilton</span>
         </br>
     Monday 16:47, moderate rain </br>
@@ -33,6 +35,7 @@ Humidity: <span class="weather-specs">87%</span>, Wind: <span class="weather-spe
               >3</span
             ><span class="current-temperature-unit">°C</span>
             </div>
+            </main>
     <footer>
       This project was coded by
       <a href="https://github.com/heschofield" target="_blank"
