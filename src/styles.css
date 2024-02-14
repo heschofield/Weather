@@ -1,21 +1,65 @@
-.weather-app {
-  background-color: rgb(242, 238, 238);
-  padding: 25px;
-}
-
 body {
   background-color: rgb(118, 168, 221);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 50;
   font-style: normal;
+  color: rgb(71, 71, 71);
 }
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+footer {
+  font-size: 12px;
+  align-content: center;
+  border-style: dashed;
+  border-color: grey;
+  display: block;
+  padding: 5px 5px;
+  margin: 10px;
+}
+.weather-app {
+  background-color: rgb(242, 238, 238);
+  margin: 45px auto;
+  padding: 30px;
+  box-shadow: grey 7px 7px;
+  border-style: solid;
+  border-color: grey;
+  border-width: 2px;
+  max-width: 600px;
+}
+.search-input {
+  padding: 15px 20px;
+  margin: 20px;
+  width: 80%;
+  font-size: 16px;
+  background-color: rgb(167, 201, 238);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-button {
+  padding: 15px 20px;
+  margin: 20px;
+  width: 20%;
+  font-size: 16px;
+  background-color: rgb(130, 156, 185);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .city-displayed {
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-size: 50px;
   letter-spacing: 3px;
   color: rgb(1, 1, 178);
+  text-shadow: 2px 2px rgb(130, 156, 185);
 }
 
 .weather-specs {
@@ -27,6 +71,9 @@ body {
   font-size: 50px;
   letter-spacing: 3px;
   color: rgb(1, 1, 178);
+  text-shadow: 2px 2px rgb(130, 156, 185);
+  display: flex;
+  justify-content: right;
 }
 
 .current-temperature-icon {
