@@ -97,10 +97,10 @@ form {
   max-width: fit-content;
   padding: 15px;
 }
-
-.current-temperature-icon {
-  font-size: 44px;
-  margin-top: 22px;
+.fa-solid.fa-cloud-showers-heavy {
+  font-size: 2.5em;
+  font-weight: 900;
+  padding-top: 35px;
   margin-right: 10px;
 }
 .current-temperature-value {
