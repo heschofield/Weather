@@ -2,10 +2,11 @@ body {
   background-color: rgb(97, 48, 75);
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: auto;
+  font-weight: normal;
   font-style: normal;
   color: rgb(71, 71, 71);
   cursor: crosshair;
+  padding: 25px;
 }
 .weather-app {
   background-color: rgb(148, 191, 190);
@@ -56,19 +57,19 @@ form {
 ::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
-p {
-  font-size: 16px;
-  border-style: dashed;
-  border-color: rgb(133, 124, 141);
-  max-width: fit-content;
-  padding: 15px;
-  justify-content: left;
-}
 .weather-flexbox {
   display: flex;
   justify-content: space-between;
 }
-.city-displayed {
+.current-city-details-container {
+  border-style: dashed;
+  border-color: rgb(133, 124, 141);
+  max-width: 60%t;
+  justify-content: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.current-city {
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-size: 38px;
@@ -77,8 +78,10 @@ p {
   color: rgb(172, 247, 193);
   text-shadow: 2px 2px rgb(92, 0, 41);
 }
-
-.weather-specs {
+.current-details {
+  font-size: 16px;
+}
+.current-details strong {
   color: #0e402d;
   font-weight: 600;
 }
@@ -113,8 +116,8 @@ footer {
   text-align: center;
   border-style: dashed;
   border-color: rgb(133, 124, 141);
-  margin: 30px 0 15px 0;
-  padding: 10px;
+  margin: 45px 0 15px 0;
+  padding: 10px 5px;
 }
 
 a {

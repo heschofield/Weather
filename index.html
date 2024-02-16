@@ -22,24 +22,23 @@
         <form id="search-form">
           <input
             type="search"
-            placeholder="Enter your city..."
-            id="search-input"
-            class="search-input"
+            placeholder="Enter a city.."
             required
-            minlength="2"
+            class="search-input"
+            id="search-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
         <div class="weather-flexbox">
-          <p>
-            <span class="city-displayed">Hamilton</span>
-            <br />
-            Monday 16:47, moderate rain <br />
-            Humidity: <span class="weather-specs">87%</span>, Wind:
-            <span class="weather-specs">7.2km/h</span>
-          </p>
+          <div class="current-city-details-container">
+            <h1 class="current-city" id="current-city">Hamilton</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
           <div class="current-temperature-container">
             <span class="current-temperature-icon">
               <span class="material-symbols-outlined"> rainy_heavy </span>
