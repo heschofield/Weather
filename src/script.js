@@ -4,14 +4,12 @@ function search(event) {
   let cityElement = document.querySelector("#current-city");
   cityElement.innerHTML = searchInputElement.value;
 
-  //At this point we should out and set the actual weather
   get_weather_from_api(searchInputElement.value);
 }
 
 function get_weather_from_api(city) {
-  //First we need to encode the city
   let city_encoded = encodeURIComponent(city);
-  let apiKey = "6tb6ab3978170b6e78fecf434o460ab9";
+  let apiKey = "77e2c1af0bb1ff636e0c2f40fade95to";
   let url = `https://api.shecodes.io/weather/v1/current?query=${city_encoded}&key=${apiKey}&units=metric`;
 
   console.log(url);
@@ -22,7 +20,6 @@ function handle_weather_result(data) {
   console.log("We are in the handle weather result");
   console.log(data);
 
-  //Let's see if we got a city back
   if (data.data.city) {
     console.log(
       "We found a city called " +
@@ -31,13 +28,13 @@ function handle_weather_result(data) {
         data.data.country
     );
 
-    let currentTemerature = data.data.temperature.current;
+    let currentTemperature = Math.floor(data.data.temperature.current);
+    data.data.temperature.current;
     let temperatureElement = document.querySelector(
       ".current-temperature-value"
     );
-    temperatureElement.innerHTML = currentTemerature;
+    temperatureElement.innerHTML = currentTemperature;
   } else {
-    // didnt get a city so there is likely an error.
     alert(data.data.message);
   }
 }
