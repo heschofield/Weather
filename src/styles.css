@@ -64,7 +64,7 @@ form {
 .current-city-details-container {
   border-style: dashed;
   border-color: rgb(133, 124, 141);
-  max-width: 60%t;
+  max-width: 60%;
   justify-content: left;
   padding-left: 15px;
   padding-right: 15px;
@@ -94,17 +94,16 @@ form {
   justify-content: right;
   border-style: dashed;
   border-color: rgb(133, 124, 141);
-  max-width: fit-content;
+  max-width: 40%;
   padding: 15px;
 }
-.fa-solid.fa-cloud-showers-heavy {
-  font-size: 2.5em;
-  font-weight: 900;
-  padding-top: 35px;
-  margin-right: 10px;
+.current-temperature-icon {
+  width: 88px;
+  height: 88px;
+  margin-top: 5px;
 }
 .current-temperature-value {
-  font-size: 88px;
+  font-size: 80px;
 }
 .current-temperature-unit {
   margin-top: 16px;

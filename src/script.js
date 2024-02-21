@@ -50,6 +50,9 @@ function handle_weather_result(data) {
 
     let windElement = document.querySelector("#wind");
     windElement.innerHTML = `${data.data.wind.speed}km/h`;
+
+    let iconElement = document.querySelector("#icon");
+    iconElement.innerHTML = `<img src="${data.data.condition.icon_url}" class="current-temperature-icon" />`;
   } else {
     alert(data.data.message);
   }
