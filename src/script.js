@@ -1,3 +1,11 @@
+// default city
+const defaultCity = "Hamilton";
+
+// Call get_weather_from_api with the default city when the page loads
+window.addEventListener("DOMContentLoaded", () => {
+  get_weather_from_api(defaultCity);
+});
+
 function search(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("#search-input");
@@ -29,11 +37,19 @@ function handle_weather_result(data) {
     );
 
     let currentTemperature = Math.floor(data.data.temperature.current);
-    data.data.temperature.current;
     let temperatureElement = document.querySelector(
       ".current-temperature-value"
     );
     temperatureElement.innerHTML = currentTemperature;
+
+    let descriptionElement = document.querySelector("#description");
+    descriptionElement.innerHTML = data.data.condition.description;
+
+    let humidityElement = document.querySelector("#humidity");
+    humidityElement.innerHTML = `${data.data.temperature.humidity}%`;
+
+    let windElement = document.querySelector("#wind");
+    windElement.innerHTML = `${data.data.wind.speed}km/h`;
   } else {
     alert(data.data.message);
   }
