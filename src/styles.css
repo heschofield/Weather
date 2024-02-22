@@ -95,7 +95,7 @@ form {
   border-style: dashed;
   border-color: rgb(133, 124, 141);
   max-width: 40%;
-  padding: 15px;
+  padding: 15px 15px 15px 0px;
 }
 .current-temperature-icon {
   width: 88px;
@@ -110,6 +110,23 @@ form {
   font-size: 28px;
 }
 
+.weather-forecast {
+  text-align: center;
+  margin-top: 20px;
+}
+.weather-forecast-date {
+  opacity: 0.5;
+}
+.weather-forecast-daily-icon {
+  width: 40px;
+  height: 40px;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
 footer {
   font-size: 10px;
   text-align: center;
