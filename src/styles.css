@@ -111,8 +111,13 @@ form {
 }
 
 .weather-forecast {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
+  padding: 15px;
+  border-style: dashed;
+  border-color: rgb(133, 124, 141);
 }
 .weather-forecast-date {
   opacity: 0.5;
@@ -123,6 +128,10 @@ form {
 }
 .weather-forecast-temperatures {
   font-size: 13px;
+  color: #0e402d;
+}
+.weather-forecast-temperature-max {
+  font-weight: 500;
 }
 .weather-forecast-temperature-min {
   opacity: 0.5;
@@ -132,8 +141,7 @@ footer {
   text-align: center;
   border-style: dashed;
   border-color: rgb(133, 124, 141);
-  margin: 45px 0 15px 0;
-  padding: 10px 5px;
+  padding: 5px;
 }
 
 a {
