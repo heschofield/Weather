@@ -20,12 +20,12 @@ body {
 }
 form {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0px 0px 30px 0px;
 }
 .search-input {
   padding: 15px;
-  margin: 20px;
+  margin: 15px;
   width: 80%;
   font-size: 16px;
   background-color: rgb(133, 124, 141);
@@ -43,7 +43,7 @@ form {
 }
 .search-button {
   padding: 15px 30px;
-  margin: 20px;
+  margin: 15px;
   width: 20%;
   font-size: 16px;
   background-color: rgb(172, 247, 193);
@@ -60,6 +60,7 @@ form {
 .weather-flexbox {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 45px;
 }
 .current-city-details-container {
   border-style: dashed;
@@ -110,48 +111,11 @@ form {
   font-size: 28px;
 }
 
-.weather-forecast {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin: 20px 0 20px 0;
-  padding: 15px;
-  border-style: dashed;
-  border-color: rgb(133, 124, 141);
-}
-.weather-forecast-date {
-  opacity: 0.5;
-}
-.weather-forecast-daily-icon {
-  width: 40px;
-  height: 40px;
-}
-.weather-forecast-temperatures {
-  font-size: 13px;
-  color: #0e402d;
-}
-.weather-forecast-temperature-max {
-  font-weight: 500;
-}
-.weather-forecast-temperature-min {
-  opacity: 0.5;
-}
 footer {
   font-size: 10px;
   text-align: center;
   border-style: dashed;
   border-color: rgb(133, 124, 141);
   padding: 5px;
-}
-
-a {
-  color: rgb(97, 48, 75);
-}
-
-a:hover {
-  color: rgb(172, 247, 193);
-  cursor: pointer;
-}
-a:visited {
-  color: rgb(97, 48, 75);
+  margin-bottom: 15px;
 }
